@@ -1,0 +1,66 @@
+@import url("https://use.typekit.net/eba0efr.css");
+
+@import url("https://use.typekit.net/chz4ooi.css");
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/*HOME*/
+
+body {
+  background-color: #EAEAEA;
+}
+
+main {
+  padding: 0 5rem 0 10rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: solid .1rem;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "ff-providence-sans-web-pro", sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-top: 3rem;
+}
+
+h1{
+  font-family: "ff-good-web-pro", sans-serif;
+  font-size: 5rem;
+}
+
+.arrow {
+  display: flex;
+  width: 5rem;
+}
+
+
+footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footertag {
+  display: flex;
+  align-items: flex-end;
+}
