@@ -17,13 +17,14 @@ html {
 
 /*HOME*/
 /*HAMBURGER*/
+/*NAV*/
 aside {
   display:flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   padding: 5rem 2rem 0rem 2rem;
-  height: 48rem;
+  height: 50rem;
   border-right: .125rem solid #000;
   max-width: 8.188rem;
 }
@@ -46,9 +47,6 @@ aside {
   transform: translateX(-50%);
 }
 
-.downarrow {
-  min-width: rem;
-}
 
 /*javascript*/
 .nav--toggle {
@@ -186,8 +184,9 @@ transform: translateY(5rem)  translateX(-25rem);
 .verticalCards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
   list-style: none;
-  gap: rem;
+
 }
 
 .eventText {
@@ -349,7 +348,14 @@ a {
 /*EVENTS*/
 
 .test {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-bottom: 4rem;
+  font-family: "ff-good-web-pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.563rem;
 }
 
 .events {
@@ -405,8 +411,21 @@ border: solid .125 rem #000;
 .threadsHome li {
 border: solid .125rem #000;
 margin: 4rem 0 4rem 0;
-padding: 4rem;
+padding: 3rem;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+}
+
+.likesComments {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+/*ARTISTS*/
+
+.artistText li {
+  display: flex;
+  flex-direction: row;
 }
