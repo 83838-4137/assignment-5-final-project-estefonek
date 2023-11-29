@@ -23,7 +23,7 @@ aside {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 5rem 2rem 0rem 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   height: 50rem;
   border-right: .125rem solid #000;
   max-width: 8.188rem;
@@ -72,12 +72,13 @@ body {
   background-color: #EAEAEA;
   display: flex;
   flex-direction: row;
+  margin-right: 4rem;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  margin: 0 3rem;
+  margin-left: 3rem;
   width: 100%;
 }
 
@@ -139,6 +140,8 @@ span {
   color: #5A01B2;
 
 }
+
+
 
 .upcomingSpan {
   position: absolute;
@@ -229,7 +232,11 @@ align-items: center;
   align-items: baseline;
 }
 
-
+.scrollArrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .homeSection {
   margin-bottom: 5rem;
@@ -273,8 +280,8 @@ footer {
 align-items:  flex-end;
 }
 
-footer div {
-  width: 80%;
+.end {
+  width: 55%;
 }
 
 .footerGrid{
@@ -352,6 +359,8 @@ a {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 4rem;
+  margin-right: 5rem;
+  
   font-family: "ff-good-web-pro", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
