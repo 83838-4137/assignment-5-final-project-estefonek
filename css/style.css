@@ -19,10 +19,15 @@ html {
 /*HAMBURGER*/
 aside {
   display:flex;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  margin-top: 2rem;;
+  justify-content: space-between;
+  padding: 5rem 2rem 0rem 2rem;
+  height: 48rem;
+  border-right: .125rem solid #000;
+  max-width: 8.188rem;
 }
+
 .bar { 
   background-color: #000;
   width: 3.5rem;
@@ -34,12 +39,15 @@ aside {
 
 .nav {
   position: fixed;
-  background-color: aquamarine;
   height: 100vh;
   transition: all 0.4s ease-in;
   width: 100%;
-  left: -100%;
+  left: -50%;
   transform: translateX(-50%);
+}
+
+.downarrow {
+  min-width: rem;
 }
 
 /*javascript*/
@@ -62,16 +70,17 @@ aside {
   opacity: 0;
 }
 
-
-
 body {
   background-color: #EAEAEA;
-  display: grid;
-  grid-template-columns: .5fr 1fr;
+  display: flex;
+  flex-direction: row;
 }
 
 main {
-  padding: 0 5rem 0 10rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+  width: 100%;
 }
 
 
@@ -80,10 +89,8 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem;
-  padding-bottom: 1rem;
   border-bottom: solid .1rem;
-  height: 6.938;
+  height: 6.938rem;
 }
 
 .header2 {
@@ -103,17 +110,66 @@ color: black;
 h3 {
   font-family: "ff-providence-sans-web-pro", sans-serif;
   text-transform: uppercase;
-  font-size: 4rem;
-  padding-top: 3rem;
+  font-size: 5.5rem;
+  margin-top: 3rem;
+  width: 100%
+  
+}
+
+.brandonCutout {
+  width: 15rem;
 }
 
 h1{
+
   font-family: "ff-good-web-pro", sans-serif;
+  color: #000;
   font-size: 5rem;
   text-transform: uppercase;
+  font-weight: 900;
+  font-size: 9.375rem;
+  margin-bottom: 5rem;
 }
 
+.descriptorSpan {
+  font-family: "ff-good-web-pro", sans-serif;
+  color: #5A01B2;
+}
 
+span {
+  font-family: "ff-providence-sans-web-pro", sans-serif;
+  color: #5A01B2;
+
+}
+
+.upcomingSpan {
+  position: absolute;
+transform: translateY(5rem)  translateX(-25rem);
+}
+
+.songsSpan {
+  position: absolute;
+  transform: translateY(5rem)  translateX(-5rem);
+}
+
+.upcomingSpan {
+  position: absolute;
+  transform: translateY(5rem)  translateX(-30rem);
+}
+
+.artistsSpan{
+  position: absolute;
+  transform: translateY(5rem)  translateX(-20rem);
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+  gap:30rem;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
 
 .arrow {
   display: flex;
@@ -123,46 +179,234 @@ h1{
 .upcomingevents {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  margin-bottom: 5rem;
 }
 
 .verticalCards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
-  gap: 3rem;
+  gap: rem;
 }
 
 .eventText {
   list-style: none;
 }
 
+.bodyBoxes img {
+  width: 100%;
+}
+
+.bodyBoxes ul{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  justify-content: space-between;
+}
 
 
-section {
-  padding-bottom: 10rem;
+.dividers {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0 5rem 0;
+}
+
+.dividers div{
+  display: flex;
+  font-family: "ff-providence-sans-web-pro", sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  justify-content: flex-end;
+  border-bottom: solid 1px #000;
+width: 50%;
+align-items: center;
+}
+
+.dividerArrow {
+  display: flex;
+  width: 45px;
+  height: 10px;
+  align-items: baseline;
+}
+
+
+
+.homeSection {
+  margin-bottom: 5rem;
 }
 
 h4 {
   font-family: "ff-providence-sans-web-pro", sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3.125rem;
+}
+
+li {
+  font-family: "ff-good-web-pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.563rem;
+  list-style: none;
+  margin-left: 1rem;
+  justify-content: space-around;
+}
+
+/* FOOTER */
+
+.footerTitle {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px solid #000;
+  margin-bottom: 3rem;
 }
 
 footer {
   font-family: "ff-providence-sans-web-pro", sans-serif;
+  text-transform: uppercase;
   font-size: 1.25rem;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+  padding-bottom: 4rem;
+align-items:  flex-end;
+}
+
+footer div {
+  width: 80%;
+}
+
+.footerGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+gap: 5rem;
+}
+
+.footerSplit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footerContent {
+margin-right: 10rem;
+display: flex;
+flex-direction: row;
+gap: 3rem;
+}
+
+.footerEmpty {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
 }
 
+h5{
+ font-family:  "ff-providence-sans-web-pro", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.35rem;
+}
 
 /*MIXER*/
 
+.searchBar {
+  width: 38.063rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.mixerSearch {
+  font-family:  "ff-providence-sans-web-pro", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.mixGrid {
+  width: 20.75rem;
+  height: 13.188;
+}
+
+.mixerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5rem;
+}
+
+.mixerImages {
+    width: 332px;
+  height: 211px;
+  object-fit: cover
+}
+.tadaText h5 {
+  margin: 5rem 0 5rem 0;
+}
+a {
+  font-size: 1rem;
+}
+
+/*EVENTS*/
+
+.test {
+  margin-bottom: 4rem;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  margin-top: -3rem;
+}
+
+.eventSplit {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter {
+  width: 100%;
+
+}
+
+.eventFilter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: #000 solid 2px;
+  margin: .5rem 0;
+  font-family:  "ff-providence-sans-web-pro", sans-serif;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+/*THREADS*/
+
+.filter {
+  width: 2.438rem;
+  height: 2.181rem;
+}
+
+.filterText {
+  font-family: "ff-good-web-pro", sans-serif;
+}
+
+.threadsBody {
+  border: solid .125rem #000;
+  margin: 4rem 0 4rem 0;
+  padding: 2rem;
+}
+
+.threadsBoxes {
+border: solid .125 rem #000;
+}
+
+.threadsHome li {
+border: solid .125rem #000;
+margin: 4rem 0 4rem 0;
+padding: 4rem;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
