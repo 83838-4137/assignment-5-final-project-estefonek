@@ -368,6 +368,10 @@ gap: 3rem;
 
 }
 
+.footer a {
+  text-decoration: none;
+}
+
 h5{
  font-family:  "ff-providence-sans-web-pro", sans-serif;
   text-transform: uppercase;
@@ -379,6 +383,7 @@ h5{
 .searchBar {
   width: 38.063rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .mixerSearch {
@@ -439,7 +444,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  margin: 5rem 0;
+  margin-bottom: 5rem;
 
   
 }
