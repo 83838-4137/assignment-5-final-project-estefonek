@@ -39,18 +39,30 @@ aside {
 }
 
 .nav {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   transition: all 0.4s ease-in;
   width: 100%;
-  left: -50%;
-  transform: translateX(-50%);
+  left: -80%;
+  padding: 4rem 0;
+  transform: translateX(-40%);
+  background-color: #EAEAEA;
 }
 
 .nav a {
-text-decoration: none;
+  text-decoration: none;
+  font-size: 3rem;
+  color: #000;
 }
 
+.nav a:hover {
+  color:#5A01B2;
+  text-decoration: 3px underline ;
+} 
+
+.nav ul {
+
+}
 
 /*javascript*/
 .nav--toggle {
@@ -84,6 +96,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-left: 3rem;
+  margin-right: 3rem;
   width: 100%;
 }
 
@@ -116,8 +129,7 @@ h3 {
   text-transform: uppercase;
   font-size: 5.5rem;
   margin-top: 3rem;
-  width: 100%
-  
+  width: 1158px
 }
 
 .brandonCutout {
@@ -146,7 +158,11 @@ span {
 
 }
 
-
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
 
 .upcomingSpan {
   position: absolute;
@@ -199,6 +215,7 @@ transform: translateY(5rem)  translateX(-25rem);
 
 .eventText {
   list-style: none;
+
 }
 
 .bodyBoxes img {
@@ -243,8 +260,40 @@ align-items: center;
   justify-content: center;
 }
 
+.artistSpotify {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.artistSpotify img {
+  width: 40px;
+  height: 40px
+}
+
+.arrowSpotify {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 374px;
+  margin-top: 1rem;
+}
+
+.arrowSpotify button {
+  border-style: none;
+}
+
+.arrowSpotify img {
+  width: 6rem
+}
+
 .homeSection {
   margin-bottom: 5rem;
+}
+
+.centeralign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h4 {
@@ -252,7 +301,6 @@ h4 {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 3.125rem;
 }
 
 li {
@@ -363,7 +411,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 4rem;
   margin-right: 5rem;
   
   font-family: "ff-good-web-pro", sans-serif;
@@ -381,14 +428,10 @@ a {
 }
 
 .eventSplit {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr .5fr;
 }
 
-.filter {
-  width: 100%;
-
-}
 
 .eventFilter {
   display: flex;
@@ -404,7 +447,6 @@ a {
 /*THREADS*/
 
 .filter {
-  width: 2.438rem;
   height: 2.181rem;
 }
 
