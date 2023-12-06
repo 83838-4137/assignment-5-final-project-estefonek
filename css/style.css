@@ -47,6 +47,10 @@ aside {
   transform: translateX(-50%);
 }
 
+.nav a {
+text-decoration: none;
+}
+
 
 /*javascript*/
 .nav--toggle {
@@ -73,6 +77,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-right: 4rem;
+  width: 100%;
 }
 
 main {
