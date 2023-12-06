@@ -368,8 +368,17 @@ gap: 3rem;
 
 }
 
-.footer a {
+footer a{
   text-decoration: none;
+  color: #5A01B2;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: #35E2AE;
 }
 
 h5{
